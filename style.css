@@ -11,7 +11,7 @@
 .hero {
   width: 100vw;
   /* height: 72.5rem; */
-  height: 88vh;
+  height: 100vh;
   background-position: center;
   /* display: flex; */
   background-size: cover;
@@ -49,4 +49,47 @@ nav ul li {
   font-size: 1.4rem;
   letter-spacing: 0.2rem;
   font-weight: 500;
+}
+
+.content {
+  margin: 0 14.1rem;
+  padding: 2.4rem;
+  height: 90%;
+  width: 64rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content h2 {
+  margin-bottom: 1.6rem;
+  letter-spacing: 1rem;
+  font-size: 1.4rem;
+  color: #ffffff80;
+}
+.content h1 {
+  color: #ffffff;
+  margin-bottom: 2.4rem;
+  line-height: 1.2;
+  font-size: 5.6rem;
+}
+.content p {
+  width: 40rem;
+  font-weight: 200;
+  letter-spacing: 0.1rem;
+  color: #ffffff80;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 4rem;
+}
+
+.content a {
+  text-decoration: none;
+  align-self: flex-start;
+  /* justify-self: flex-start; */
+  color: #fff;
+  background-color: #d87d4a;
+  font-size: 1.3rem;
+  padding: 14px 32px;
+  letter-spacing: 0.2rem;
 }

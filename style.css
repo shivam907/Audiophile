@@ -2,11 +2,15 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 .hero {
   width: 100vw;
+  /* height: 72.5rem; */
   height: 88vh;
+  background-position: center;
+  background-size: cover;
   margin-top: -3.3vh;
   /* padding-right: -110vw; */
   background-size: 100px;

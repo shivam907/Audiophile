@@ -93,3 +93,124 @@ nav ul li {
   padding: 14px 32px;
   letter-spacing: 0.2rem;
 }
+
+ul li:hover {
+  color: #d87d4a;
+}
+
+.space {
+  height: 26vh;
+}
+
+.category {
+  margin: 0 14.1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.block {
+  position: relative;
+  width: 35rem;
+  height: 17rem;
+  border-radius: 8px;
+  background-color: #f1f1f1;
+  margin-bottom: 12rem;
+  padding: 88px 0 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.block h1 {
+  color: #191919;
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1.6rem;
+}
+
+.block div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.block div p {
+  color: #00000080;
+  font-size: 1.3rem;
+}
+
+.img-icon {
+  height: 13.8rem;
+  top: -25%;
+  /* width: 13.295rem; */
+  position: absolute;
+}
+
+.speaker {
+  background-image: url("Images/home/desktop/pattern-circles.svg");
+  background-size: cover;
+  background-color: #d87d4a;
+  margin: 0 14.1rem;
+  height: 59.385rem;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 116rem;
+  margin-bottom: 10rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.speaker img {
+  margin-top: 117px;
+
+  height: calc(100% - 117px);
+  /* margin-bottom: -25px; */
+  transform: translateY(10px);
+}
+
+.content-2 {
+  /* margin: 0 14.1rem;
+  padding: 2.4rem; */
+  /* height: 90%; */
+  width: 36rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content-2 h2 {
+  margin-bottom: 1.6rem;
+  letter-spacing: 1rem;
+  font-size: 1.4rem;
+  color: #ffffff80;
+}
+.content-2 h1 {
+  color: #ffffff;
+  margin-bottom: 2.4rem;
+  line-height: 1;
+  font-size: 5.6rem;
+}
+.content-2 p {
+  width: 40rem;
+  font-weight: 200;
+  letter-spacing: 0.1rem;
+  color: #ffffffbf;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 4rem;
+}
+
+.content-2 a {
+  text-decoration: none;
+  align-self: flex-start;
+  /* justify-self: flex-start; */
+  color: #fff;
+  background-color: #191919;
+  font-size: 1.3rem;
+  padding: 14px 32px;
+  letter-spacing: 0.2rem;
+}
+
+.content-2 a:hover {
+  background-color: #494949;
+}

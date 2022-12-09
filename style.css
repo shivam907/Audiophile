@@ -233,7 +233,8 @@ ul li:hover {
   margin-bottom: 5rem;
 }
 
-.speaker-2 h1 {
+.speaker-2 h1,
+.content3 h1 {
   font-size: 2.8rem;
   letter-spacing: 0.2rem;
   margin-bottom: 3.2rem;
@@ -254,4 +255,26 @@ ul li:hover {
 .see:hover {
   background-color: #191919;
   color: #fff;
+}
+
+.content3 {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 9.5rem;
+  background-color: #f1f1f1;
+}
+
+.earphone {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 32rem;
+  margin: 0 14.1rem;
+  gap: 1rem;
+  margin-bottom: 5rem;
+}
+
+.earphone img {
+  border-radius: 8px;
 }

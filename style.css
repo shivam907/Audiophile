@@ -147,15 +147,15 @@ ul li:hover {
 }
 
 .speaker {
+  margin: 0 14.1rem;
   background-image: url("Images/home/desktop/pattern-circles.svg");
   background-size: cover;
   background-color: #d87d4a;
-  margin: 0 14.1rem;
   height: 59.385rem;
   border-radius: 10px;
   overflow: hidden;
   width: 116rem;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
   display: flex;
   justify-content: space-evenly;
 }
@@ -213,4 +213,45 @@ ul li:hover {
 
 .content-2 a:hover {
   background-color: #494949;
+}
+
+.speaker-2 {
+  background: url("/Images/home/desktop/image-speaker-zx7.jpg");
+  /* width: 60vw; */
+  border-radius: 8px;
+  background-color: #191919;
+  height: 32rem;
+  /* margin: 0 auto; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 14.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: flex-start; */
+  padding-left: 15rem;
+  margin-bottom: 5rem;
+}
+
+.speaker-2 h1 {
+  font-size: 2.8rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.see {
+  align-self: flex-start;
+  padding: 14px 32px;
+  font-size: 1.3rem;
+  border: 1.5px solid #191919;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  color: #191919;
+  background-color: transparent;
+  border-radius: 3px;
+}
+
+.see:hover {
+  background-color: #191919;
+  color: #fff;
 }

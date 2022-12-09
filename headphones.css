@@ -397,3 +397,41 @@ footer {
 a {
   text-decoration: none;
 }
+
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: 12rem;
+  margin: 7rem 14.1rem;
+}
+
+.prod {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prod img {
+  /* width: 50%; */
+  height: 56rem;
+}
+
+.content-prod {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-prod h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: #d87d4a;
+  font-size: 1.4rem;
+  font-family: 100;
+  margin-bottom: 1.6rem;
+}
+
+.content-prod h1 {
+  font-size: 2.8rem;
+  letter-spacing: 0.2rem;
+  color: #191919;
+  margin-bottom: 2.4rem;
+}

@@ -85,6 +85,7 @@ nav ul li {
   margin-bottom: 4rem;
 }
 
+.content-prod a,
 .content a {
   text-decoration: none;
   align-self: flex-start;
@@ -101,7 +102,7 @@ ul li:hover {
 }
 
 .space {
-  height: 26vh;
+  height: 16vh;
 }
 
 .category {
@@ -417,7 +418,9 @@ a {
 
 .content-prod {
   display: flex;
+  width: 45%;
   flex-direction: column;
+  justify-content: center;
 }
 
 .content-prod h2 {
@@ -425,7 +428,7 @@ a {
   letter-spacing: 0.5rem;
   color: #d87d4a;
   font-size: 1.4rem;
-  font-family: 100;
+  font-weight: 300;
   margin-bottom: 1.6rem;
 }
 
@@ -434,4 +437,14 @@ a {
   letter-spacing: 0.2rem;
   color: #191919;
   margin-bottom: 2.4rem;
+}
+.content-prod p {
+  font-size: 1.5rem;
+  color: #00000080;
+  margin-bottom: 2.4rem;
+  line-height: 1.6;
+}
+
+.headbest {
+  margin-top: -10rem !important;
 }

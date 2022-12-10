@@ -588,3 +588,39 @@ ul div {
 .img2 {
   height: 58rem;
 }
+
+.like {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7rem;
+}
+
+.like h1 {
+  font-size: 3.2rem;
+  color: #191919;
+}
+
+.likes {
+  display: flex;
+  justify-content: space-between;
+  gap: 3.2rem;
+}
+.likeb {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+.likeb img {
+  width: 35rem;
+  display: flex;
+  gap: 5rem;
+}
+
+.likeb h1 {
+  font-size: 2.4rem;
+  color: #191919;
+}

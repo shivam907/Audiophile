@@ -106,7 +106,8 @@ ul li:hover {
 }
 
 .category {
-  margin: 0 14.1rem;
+  width: 120rem;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
@@ -283,7 +284,8 @@ ul li:hover {
 }
 
 .thebest {
-  margin: 0 14.1rem;
+  width: 120rem;
+  margin: 0 auto;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -400,10 +402,11 @@ a {
 }
 
 .products {
+  width: 120rem;
   display: flex;
   flex-direction: column;
   gap: 5rem;
-  margin: 7rem 14.1rem;
+  margin: 7rem auto;
 }
 .chaljaa {
   font-size: 1.6rem !important;
@@ -569,13 +572,16 @@ ul div {
 }
 
 .img1 {
-  width: 44.4rem;
+  /* width: 44.4rem; */
   gap: 2rem;
   display: flex;
   flex-direction: column;
 }
 
 .gallery {
+  width: 120rem;
+  /* height: 88rem; */
+  margin: 0 auto;
   margin-top: 10rem;
   display: flex;
   gap: 2rem;
@@ -584,12 +590,14 @@ ul div {
 .gallery img {
   border-radius: 12px;
 }
-
 .img2 {
+  width: 68%;
   height: 58rem;
 }
 
 .like {
+  width: 120rem;
+  margin: 0 auto;
   margin-top: 10rem;
   display: flex;
   flex-direction: column;
@@ -609,11 +617,9 @@ ul div {
 }
 .likeb {
   display: flex;
-  /* width: 100%; */
   flex-direction: column;
   gap: 3.2rem;
   align-items: center;
-  justify-content: center;
 }
 
 .likeb img {

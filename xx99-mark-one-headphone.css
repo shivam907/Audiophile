@@ -609,9 +609,11 @@ ul div {
 }
 .likeb {
   display: flex;
+  /* width: 100%; */
   flex-direction: column;
   gap: 3.2rem;
   align-items: center;
+  justify-content: center;
 }
 
 .likeb img {

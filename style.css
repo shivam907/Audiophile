@@ -11,7 +11,7 @@
 .hero {
   width: 100vw;
   /* height: 72.5rem; */
-  height: 100vh;
+  height: 80rem;
   background-position: center;
   /* display: flex; */
   background-size: cover;
@@ -24,18 +24,30 @@
   /* height: auto;
   width: auto; */
 }
+.heroo {
+  width: 120rem;
+  margin: 0 auto;
+  display: flex;
+  height: 90%;
+  align-items: center;
+}
 
 nav {
   width: 77.5%;
-  padding: 3.2rem 0;
+
   margin: 0 auto;
   /* margin: 0 3rem; */
   /* height: 8rem; */
+  background-color: #191919;
+}
+.nav {
+  padding: 3.2rem 0;
+  border-bottom: 1px solid #ffffff1a;
+  width: 120rem;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #191919;
-  border-bottom: 1px solid #ffffff1a;
 }
 
 nav ul {
@@ -52,7 +64,9 @@ nav ul li {
 }
 
 .content {
-  margin: 0 14.1rem;
+  /* margin: 0 14.1rem; */
+  /* width: 120rem; */
+  /* margin: 0; */
   padding: 2.4rem;
   height: 90%;
   width: 64rem;
@@ -99,11 +113,13 @@ ul li:hover {
 }
 
 .space {
-  height: 26vh;
+  margin: 10rem 0;
 }
 
 .category {
-  margin: 0 14.1rem;
+  /* margin: 0 14.1rem; */
+  width: 120rem;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
@@ -147,14 +163,16 @@ ul li:hover {
 }
 
 .speaker {
-  margin: 0 14.1rem;
+  /* margin: 0 14.1rem; */
+  width: 120rem;
+  margin: 0 auto;
   background-image: url("Images/home/desktop/pattern-circles.svg");
   background-size: cover;
   background-color: #d87d4a;
   height: 59.385rem;
   border-radius: 10px;
   overflow: hidden;
-  width: 116rem;
+  /* width: 116rem; */
   margin-bottom: 5rem;
   display: flex;
   justify-content: space-evenly;
@@ -221,10 +239,11 @@ ul li:hover {
   border-radius: 8px;
   background-color: #191919;
   height: 32rem;
-  /* margin: 0 auto; */
+  width: 120rem;
+  margin: 0 auto;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0 14.1rem;
+  /* margin: 0 14.1rem; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -272,7 +291,9 @@ ul li:hover {
   height: 32rem;
   gap: 1rem;
   /* margin-bottom: 5rem; */
-  margin: 0 14.1rem;
+  width: 120rem;
+  margin: 0 auto;
+  /* margin: 0 14.1rem; */
 }
 
 .earphone img {
@@ -280,8 +301,10 @@ ul li:hover {
 }
 
 .thebest {
-  margin: 0 14.1rem;
-  height: 100vh;
+  /* margin: 0 14.1rem; */
+  width: 120rem;
+  margin: 10rem auto;
+  /* height: 100vh; */
   display: flex;
   align-items: center;
   gap: 4rem;
@@ -321,11 +344,14 @@ footer {
 }
 
 .content5 {
-  padding: 7.5rem 2.4rem 3.2rem;
+  padding: 7.5rem 0;
   display: flex;
   gap: 4.8rem;
   flex-direction: column;
-  margin: 0 14.1rem;
+  /* margin: 0 14.1rem; */
+  width: 120rem;
+  margin: 0 auto;
+  padding-bottom: 0;
 }
 .foot-nav {
   display: flex;

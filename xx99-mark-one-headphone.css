@@ -28,18 +28,22 @@
   font-weight: 600;
 }
 nav {
-  width: 100%;
-  padding: 3.2rem 22.5%;
+  /* width: 77.5%; */
+
   margin: 0 auto;
   /* margin: 0 3rem; */
   /* height: 8rem; */
+  background-color: #191919;
+}
+.nav {
+  padding: 3.2rem 0;
+  border-bottom: 1px solid #ffffff1a;
+  width: 120rem;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #191919;
-  border-bottom: 1px solid #ffffff1a;
 }
-
 nav ul {
   display: flex;
   gap: 4rem;

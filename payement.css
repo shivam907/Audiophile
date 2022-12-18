@@ -6,16 +6,19 @@
   box-sizing: border-box;
   font-size: 62.5%;
   font-family: "Manrope";
-  /* overflow: hidden; */
+  overflow: hidden;
 }
-/* .bg {
+.bg {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   background-color: #00000050;
   z-index: 9;
-} */
+}
 body {
   background-color: #fafafa;
 }
@@ -690,7 +693,7 @@ ul div {
   /* justify-self: flex-end; */
 }
 .cart {
-  z-index: 99;
+  /* z-index: 99; */
   /* position: absolute; */
   /* width: 38rem; */
   /* top: 10rem; */
@@ -953,4 +956,91 @@ ul div {
 
 .grand {
   color: #d87d4a;
+}
+
+.payment {
+  position: absolute;
+
+  padding: 4.8rem;
+  /* width: 45rem; */
+  background-color: #fff;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.payment h1 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: 0.2rem;
+}
+
+.payment p {
+  font-size: 1.5rem;
+  color: #00000080;
+  letter-spacing: 0.1rem;
+}
+.paybox {
+  display: flex;
+}
+.pb1 {
+  display: flex;
+  gap: 1rem;
+  padding: 4rem 3rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  background-color: #f1f1f1;
+}
+.payment img {
+  width: 6.4rem;
+}
+.pbc h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+.pbc p {
+  font-size: 1.4rem;
+  color: #00000080;
+  font-weight: 700;
+}
+.pbc {
+  display: flex;
+  flex-direction: column;
+  /* gap: 1rem; */
+  justify-content: center;
+}
+.qbc {
+  align-self: center;
+  font-size: 1.5rem;
+  color: #00000080;
+  font-weight: 600;
+  margin-left: 2rem;
+}
+.pb2 {
+  padding: 4rem 3rem;
+  background-color: #191919;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 5rem;
+}
+.pb2 h1 {
+  font-size: 1.5rem;
+  color: #ffffff80;
+  letter-spacing: 0.1rem;
+  font-weight: 200;
+}
+.pb2 p {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.payment a {
+  margin-top: 3rem;
 }

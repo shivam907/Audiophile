@@ -671,3 +671,8 @@ ul div {
   cursor: pointer;
   /* justify-self: flex-end; */
 }
+a {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}

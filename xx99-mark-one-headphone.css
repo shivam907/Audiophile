@@ -639,3 +639,8 @@ ul div {
 .likeb a {
   margin: 0 auto;
 }
+a {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}

@@ -30,7 +30,7 @@
 }
 .heroo {
   width: 120rem;
-  background: url("Images/home/desktop/image-hero.jpg");
+  background: url("../Images/home/desktop/image-hero.jpg");
   background-position: center;
   /* display: flex; */
   background-size: cover;
@@ -182,7 +182,7 @@ ul li:hover {
   /* margin: 0 14.1rem; */
   width: 120rem;
   margin: 0 auto;
-  background-image: url("Images/home/desktop/pattern-circles.svg");
+  background-image: url("../Images/home/desktop/pattern-circles.svg");
   background-size: cover;
   background-color: #d87d4a;
   height: 59.385rem;
@@ -250,7 +250,7 @@ ul li:hover {
 }
 
 .speaker-2 {
-  background: url("Images/home/desktop/image-speaker-zx7.jpg");
+  background: url("../Images/home/desktop/image-speaker-zx7.jpg");
   /* width: 60vw; */
   border-radius: 8px;
   background-color: #191919;

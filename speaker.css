@@ -460,3 +460,8 @@ a {
 .headbest {
   margin-top: -10rem !important;
 } */
+a {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}

@@ -293,6 +293,7 @@ ul li:hover {
 }
 
 .content3 {
+  width: 100%;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -302,10 +303,10 @@ ul li:hover {
 }
 
 .earphone {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  /* grid-template-columns: 1fr 1fr; */
   height: 32rem;
-  gap: 1rem;
+  gap: 3rem;
   /* margin-bottom: 5rem; */
   width: 120rem;
   margin: 0 auto;

@@ -11,10 +11,10 @@ const speakers = (req, res, next) => {
   res.render("speaker");
 };
 const xx1 = (req, res, next) => {
-  res.render("xx99-mark-two-headphones");
+  res.render("xx99-mark-one-headphones");
 };
 const xx2 = (req, res, next) => {
-  res.render("xx99-mark-one-headphones");
+  res.render("xx99-mark-two-headphones");
 };
 const xx59 = (req, res, next) => {
   res.render("xx59-headphones");

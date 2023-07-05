@@ -1,24 +1,21 @@
-import Navbar from "./UI/Navbar";
-import "./App.css";
-import Hero from "./components/Hero/Hero";
-import { Category } from "./components/Category/Category";
-import { Speaker } from "./components/Speaker/Speaker";
-import Speaker2 from "./components/speaker2/Speaker2";
-import Earphone from "./components/Earphone/Earphone";
+import Home from "./pages/Home";
 import Best from "./components/Best/Best";
-import Footer from "./UI/Footer";
+import "./App.css";
+
+import {
+  BrowserRouter as Router,
+  Route,
+  Redirect,
+  Routes,
+} from "react-router-dom";
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Hero />
-      <Category />
-      <Speaker />
-      <Speaker2 />
-      <Earphone />
-      <Best />
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/best" element={<Best />} />
+      </Routes>
+    </Router>
   );
 }
 

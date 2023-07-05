@@ -39,13 +39,14 @@
   /* margin: 0 14.1rem; */
   /* width: 120rem; */
   /* margin: 0; */
-  margin-bottom: 10rem;
+  margin-top: 10rem;
   padding: 2.4rem;
   height: 90%;
   width: 64rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* align-items: center; */
 }
 
 .content h2 {
@@ -61,7 +62,7 @@
   font-size: 5.6rem;
 }
 .content p {
-  width: 40rem;
+  width: 45rem;
   font-weight: 200;
   letter-spacing: 0.1rem;
   color: #ffffff80;

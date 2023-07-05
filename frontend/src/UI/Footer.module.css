@@ -1,0 +1,89 @@
+footer {
+  height: 35.24rem;
+  background-color: #191919;
+}
+
+.content5 {
+  padding: 7.5rem 0;
+  display: flex;
+  gap: 4.8rem;
+  flex-direction: column;
+  /* margin: 0 14.1rem; */
+  width: 120rem;
+  margin: 0 auto;
+  padding-bottom: 0;
+}
+.foot-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.foot-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 3.4rem;
+}
+
+.foot-nav ul a li {
+  font-size: 1.3rem;
+  letter-spacing: 0.15rem;
+  color: #fff;
+}
+
+.foot-p {
+  width: 50%;
+}
+
+.foot-p p {
+  color: #ffffff80;
+  font-weight: 200;
+  line-height: 1.6;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.foot-col-2 {
+  display: flex;
+}
+
+.socials {
+  width: 50%;
+  display: flex;
+  /* background-color: #d87d4a; */
+  justify-items: flex-end;
+}
+
+.socials div {
+  width: 100%;
+  /* background-color: #f1f1f1; */
+  display: flex;
+  align-self: flex-end;
+  justify-content: flex-end;
+  /* margin-right: 220px; */
+}
+
+.socials div div {
+  display: flex;
+  gap: 2rem;
+}
+
+.copyright {
+}
+.copyright p {
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  color: #ffffff80;
+}
+
+.active {
+  color: #d87d4a;
+}
+
+a {
+  /* display: inline; */
+  display: flex;
+  gap: 1rem;
+  text-decoration: none;
+}
+
+a:hover {
+}

@@ -1,0 +1,47 @@
+.speaker-2 h1,
+.content3 h1 {
+  font-size: 2.8rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.see {
+  align-self: flex-start;
+  padding: 14px 32px;
+  font-size: 1.3rem;
+  border: 1.5px solid #191919;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  color: #191919;
+  background-color: transparent;
+  border-radius: 3px;
+}
+
+.see:hover {
+  background-color: #191919;
+  color: #fff;
+}
+
+.content3 {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 9.5rem;
+  background-color: #f1f1f1;
+}
+
+.earphone {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  height: 32rem;
+  gap: -10rem;
+  /* margin-bottom: 5rem; */
+  width: 120rem;
+  margin: 0 auto;
+  /* margin: 0 14.1rem; */
+}
+
+.earphone img {
+  border-radius: 8px;
+}

@@ -21,7 +21,7 @@
 .heroo {
   width: 120rem;
   /* background: url("Images/home/desktop/image-hero.jpg"); */
-  background: url("../Images/home/desktop/image-hero.jpg");
+  background: url("../../Images/home/desktop/image-hero.jpg");
   background-position: center;
   /* display: flex; */
   background-size: cover;

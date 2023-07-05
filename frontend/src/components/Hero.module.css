@@ -1,0 +1,85 @@
+.hero {
+  /* width: 120rem; */
+  /* margin: 0 auto; */
+  /* height: 72.5rem; */
+  height: 80rem;
+  /* background: url("Images/home/desktop/image-hero.jpg"); */
+  background-color: #191919;
+  background-position: center;
+  /* display: flex; */
+  background-size: cover;
+  /* margin-top: -3.3vh; */
+  /* padding-right: -110vw; */
+  overflow: hidden;
+  background-size: 100px;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  z-index: -1;
+  /* height: auto;
+  width: auto; */
+}
+.heroo {
+  width: 120rem;
+  /* background: url("Images/home/desktop/image-hero.jpg"); */
+  background: url("../Images/home/desktop/image-hero.jpg");
+  background-position: center;
+  /* display: flex; */
+  background-size: cover;
+  /* margin-top: -3.3vh; */
+  /* padding-right: -110vw; */
+  background-size: 100px;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  margin: 0 auto;
+  display: flex;
+  height: 90%;
+  align-items: center;
+}
+.content {
+  /* margin: 0 14.1rem; */
+  /* width: 120rem; */
+  /* margin: 0; */
+  margin-bottom: 10rem;
+  padding: 2.4rem;
+  height: 90%;
+  width: 64rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content h2 {
+  margin-bottom: 1.6rem;
+  letter-spacing: 1rem;
+  font-size: 1.4rem;
+  color: #ffffff80;
+}
+.content h1 {
+  color: #ffffff;
+  margin-bottom: 2.4rem;
+  line-height: 1.2;
+  font-size: 5.6rem;
+}
+.content p {
+  width: 40rem;
+  font-weight: 200;
+  letter-spacing: 0.1rem;
+  color: #ffffff80;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 4rem;
+}
+
+.content a {
+  text-decoration: none;
+  align-self: flex-start;
+  /* justify-self: flex-start; */
+  color: #fff;
+  background-color: #d87d4a;
+  font-size: 1.3rem;
+  padding: 14px 32px;
+  letter-spacing: 0.2rem;
+}
+.content a:hover {
+  background-color: #fbaf85;
+}

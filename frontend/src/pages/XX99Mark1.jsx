@@ -7,10 +7,10 @@ import Like from "../components/Product/Like";
 import { Category } from "../components/Category/Category";
 import Best from "../components/Best/Best";
 import Footer from "../UI/Footer";
-import img from "../Images/category-headphones/desktop/image-xx99-mark-two.jpg";
-import galleryImage1 from "../Images/product-xx99-mark-two-headphones/desktop/image-gallery-1.jpg";
-import galleryImage2 from "../Images/product-xx99-mark-two-headphones/desktop/image-gallery-2.jpg";
-import galleryImage3 from "../Images/product-xx99-mark-two-headphones/desktop/image-gallery-3.jpg";
+import img from "../Images/category-headphones/desktop/image-xx99-mark-one.jpg";
+import galleryImage1 from "../Images/product-xx99-mark-one-headphones/desktop/image-gallery-1.jpg";
+import galleryImage2 from "../Images/product-xx99-mark-one-headphones/desktop/image-gallery-2.jpg";
+import galleryImage3 from "../Images/product-xx99-mark-one-headphones/desktop/image-gallery-3.jpg";
 import likeImage1 from "../Images/shared/desktop/image-xx99-mark-two-headphones.jpg";
 import likeImage2 from "../Images/shared/desktop/image-xx59-headphones.jpg";
 import likeImage3 from "../Images/shared/desktop/image-zx9-speaker.jpg";
@@ -22,19 +22,19 @@ const XX99Mark2 = () => {
       <Product>
         <ProductHero
           img={img}
-          name={"XX99 Mark II"}
+          name={"XX99 Mark I"}
           category={"HEADPHONES"}
           description={
-            "The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound."
+            "As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go."
           }
-          price={"2,999"}
+          price={"1,750"}
         />
         <Features
           featureDescription1={
-            "Featuring a genuine leather head strap and premium earcups, these headphones deliver superior comfort for those who like to enjoy endless listening. It includes intuitive controls designed for any situation. Whether you’re taking a business call or just in your own personal space, the auto on/off and pause features ensure that you’ll never miss a beat."
+            "As the headphones all others are measured against, the XX99 Mark I demonstrates over five decades of audio expertise, redefining the critical listening experience. This pair of closed-back headphones are made of industrial, aerospace-grade materials to emphasize durability at a relatively light weight of 11 oz."
           }
           featureDescription2={
-            "The advanced Active Noise Cancellation with built-in equalizer allow you to experience your audio world on your terms. It lets you enjoy your audio in peace, but quickly interact with your surroundings when you need to. Combined with Bluetooth 5. 0 compliant connectivity and 17 hour battery life, the XX99 Mark II headphones gives you superior sound, cutting-edge technology, and a modern design aesthetic."
+            "From the handcrafted microfiber ear cushions to the robust metal headband with inner damping element, the components work together to deliver comfort and uncompromising sound. Its closed-back design delivers up to 27 dB of passive noise cancellation, reducing resonance by reflecting sound to a dedicated absorber. For connectivity, a specially tuned cable is includes with a balanced gold connector."
           }
           featureListQuantity={[1, 2, 1, 1]}
           featureList={[

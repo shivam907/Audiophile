@@ -1,0 +1,46 @@
+.products {
+  display: flex;
+  width: 120rem;
+  flex-direction: column;
+  gap: 12rem;
+  margin: 7rem auto;
+}
+
+.prod {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prod img {
+  /* width: 50%; */
+  height: 56rem;
+}
+
+.content-prod {
+  display: flex;
+  width: 45%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content-prod h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: #d87d4a;
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-bottom: 1.6rem;
+}
+
+.content-prod h1 {
+  font-size: 2.8rem;
+  letter-spacing: 0.2rem;
+  color: #191919;
+  margin-bottom: 2.4rem;
+}
+.content-prod p {
+  font-size: 1.5rem;
+  color: #00000080;
+  margin-bottom: 2.4rem;
+  line-height: 1.6;
+}

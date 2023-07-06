@@ -1,0 +1,20 @@
+.hero {
+  width: 100vw;
+  height: 35rem;
+  background-color: #191919;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading-hero {
+  margin-top: 7rem;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  color: #f1f1f1;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+}

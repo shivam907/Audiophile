@@ -6,6 +6,7 @@ import XX99Mark2 from "./pages/XX99Mark2";
 import XX99Mark1 from "./pages/XX99Mark1";
 import ZX7 from "./pages/ZX7";
 import ZX9 from "./pages/ZX9";
+import Cart from "./components/Modals/Cart";
 import XX59 from "./pages/XX59";
 import YX1 from "./pages/YX1";
 import Checkout from "./components/Checkout/Checkout";
@@ -32,6 +33,7 @@ function App() {
         <Route path="/ZX9" element={<ZX9 />} />
         <Route path="/YX1" element={<YX1 />} />
         <Route path="/XX59" element={<XX59 />} />
+        <Route path="/cart" element={<Cart />} />
         <Route
           path="/checkout"
           element={

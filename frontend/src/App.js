@@ -8,13 +8,16 @@ import ZX7 from "./pages/ZX7";
 import ZX9 from "./pages/ZX9";
 import XX59 from "./pages/XX59";
 import YX1 from "./pages/YX1";
+import Checkout from "./components/Checkout/Checkout";
 import "./App.css";
+import Footer from "./UI/Footer";
 import {
   BrowserRouter as Router,
   Route,
   Redirect,
   Routes,
 } from "react-router-dom";
+import Navbar from "./UI/Navbar";
 function App() {
   return (
     <Router>
@@ -29,6 +32,16 @@ function App() {
         <Route path="/ZX9" element={<ZX9 />} />
         <Route path="/YX1" element={<YX1 />} />
         <Route path="/XX59" element={<XX59 />} />
+        <Route
+          path="/checkout"
+          element={
+            <>
+              <Navbar />
+              <Checkout />
+              <Footer />
+            </>
+          }
+        />
       </Routes>
     </Router>
   );

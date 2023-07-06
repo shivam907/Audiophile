@@ -1,0 +1,7 @@
+.products {
+  display: flex;
+  width: 120rem;
+  flex-direction: column;
+  gap: 12rem;
+  margin: 7rem auto;
+}

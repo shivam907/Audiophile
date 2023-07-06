@@ -1,8 +1,6 @@
 import Home from "./pages/Home";
-import Best from "./components/Best/Best";
-import Header from "./UI/Header";
+import Category from "./pages/Category";
 import "./App.css";
-import Navbar from "./UI/Navbar";
 import {
   BrowserRouter as Router,
   Route,
@@ -14,15 +12,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route
-          path="/best"
-          element={
-            <>
-              <Navbar />
-              <Header heading="Headphones" />
-            </>
-          }
-        />
+        <Route path="/best" element={<Category />} />
       </Routes>
     </Router>
   );

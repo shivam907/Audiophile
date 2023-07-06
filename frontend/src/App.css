@@ -7,3 +7,17 @@
   font-size: 62.5%;
   font-family: "Manrope";
 }
+.btn {
+  text-decoration: none;
+  align-self: flex-start;
+  /* justify-self: flex-start; */
+  color: #fff;
+  background-color: #191919 !important;
+  font-size: 1.3rem;
+  padding: 14px 32px;
+  letter-spacing: 0.2rem;
+}
+
+.btn:hover {
+  background-color: #494949;
+}

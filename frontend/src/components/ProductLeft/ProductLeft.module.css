@@ -28,7 +28,7 @@
   letter-spacing: 0.5rem;
   color: #d87d4a;
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight: 500;
   margin-bottom: 1.6rem;
 }
 
@@ -43,4 +43,18 @@
   color: #00000080;
   margin-bottom: 2.4rem;
   line-height: 1.6;
+}
+.content-prod a {
+  text-decoration: none;
+  align-self: flex-start;
+  /* justify-self: flex-start; */
+  color: #fff;
+  background-color: #d87d4a;
+  font-size: 1.3rem;
+  padding: 14px 32px;
+  letter-spacing: 0.2rem;
+}
+
+.content-prod a:hover {
+  background-color: #d08f69;
 }

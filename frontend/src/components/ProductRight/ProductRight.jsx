@@ -1,9 +1,8 @@
 import React from "react";
-import classes from "./ProductLeft.module.css";
-const ProductLeft = (props) => {
+import classes from "../ProductLeft/ProductLeft.module.css";
+const ProductRight = (props) => {
   return (
     <div className={`${classes["prod"]} ${classes["product-1"]}`}>
-      <img src={props.img} alt="" />
       <div className={classes["content-prod"]}>
         {props.newImage && <h2>new product</h2>}
         <h1>
@@ -14,8 +13,10 @@ const ProductLeft = (props) => {
           SEE PRODUCT
         </a>
       </div>
+
+      <img src={props.img} alt="" />
     </div>
   );
 };
 
-export default ProductLeft;
+export default ProductRight;

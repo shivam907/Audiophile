@@ -1,5 +1,7 @@
 import Home from "./pages/Home";
-import Category from "./pages/Category";
+import HeadphoneCategory from "./pages/HeadphoneCategory";
+import SpeakerCategory from "./pages/SpeakerCategory";
+import EarphoneCategory from "./pages/EarphoneCategory";
 import "./App.css";
 import {
   BrowserRouter as Router,
@@ -12,7 +14,9 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/best" element={<Category />} />
+        <Route path="/Headphones" element={<HeadphoneCategory />} />
+        <Route path="/Speakers" element={<SpeakerCategory />} />
+        <Route path="/Earphones" element={<EarphoneCategory />} />
       </Routes>
     </Router>
   );

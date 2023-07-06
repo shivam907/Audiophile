@@ -25,17 +25,21 @@ const Navbar = () => {
               <li>HOME</li>
             </a>
           </Link>
-          <Link to="/best">
+          <Link to="/Headphones">
             <a href="/headphones.html">
               <li>HEADPHONES</li>
             </a>
           </Link>
-          <a href="speaker.html">
-            <li>SPEAKERS</li>
-          </a>
-          <a href="earphone.html">
-            <li>EARPHONES</li>
-          </a>
+          <Link to="/Speakers">
+            <a href="speaker.html">
+              <li>SPEAKERS</li>
+            </a>
+          </Link>
+          <Link to="/Earphones">
+            <a href="earphone.html">
+              <li>EARPHONES</li>
+            </a>
+          </Link>
         </ul>
         <a href="/checkout.html">
           <img src={cart} alt="" />

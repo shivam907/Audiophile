@@ -14,7 +14,7 @@ const Category = () => {
   return (
     <>
       <Navbar />
-      <Header heading={"Headphones"} />
+      <Header heading={"HEADPHONES"} />
       <Products>
         <ProductLeft
           img={img}

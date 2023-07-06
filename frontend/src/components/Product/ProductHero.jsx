@@ -17,7 +17,9 @@ const ProductHero = (props) => {
             <div className={classes["quantityNumber"]}>1</div>
             <div className={classes["minus"]}>-</div>
           </div>
-          <a href="">ADD TO CART</a>
+          <a href="" className="btn">
+            ADD TO CART
+          </a>
         </div>
       </div>
     </div>

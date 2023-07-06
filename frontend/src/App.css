@@ -12,12 +12,12 @@
   align-self: flex-start;
   /* justify-self: flex-start; */
   color: #fff;
-  background-color: #191919 !important;
+  background-color: #d87d4a !important;
   font-size: 1.3rem;
   padding: 14px 32px;
   letter-spacing: 0.2rem;
 }
 
 .btn:hover {
-  background-color: #494949;
+  background-color: #d89066 !important;
 }

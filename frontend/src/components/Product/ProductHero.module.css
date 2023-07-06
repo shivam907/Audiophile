@@ -1,0 +1,96 @@
+.prod {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prod img {
+  /* width: 50%; */
+  height: 56rem;
+}
+
+.content-prod {
+  display: flex;
+  width: 45%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content-prod h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: #d87d4a;
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-bottom: 1.6rem;
+}
+
+.content-prod h1 {
+  font-size: 2.8rem;
+  letter-spacing: 0.2rem;
+  color: #191919;
+  margin-bottom: 2.4rem;
+}
+.content-prod p {
+  font-size: 1.5rem;
+  color: #00000080;
+  margin-bottom: 2.4rem;
+  line-height: 1.6;
+}
+
+.headbest {
+  margin-top: -10rem !important;
+}
+
+.back {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.back ion-icon {
+  font-size: 2rem;
+  color: #00000080 !important;
+}
+.price {
+  font-size: 1.8rem !important;
+}
+
+.quantity {
+  width: 12rem;
+  display: flex;
+}
+.plus,
+.minus {
+  width: 4.8rem;
+  height: 4.8rem;
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #00000080;
+}
+
+.plus:hover,
+.minus:hover {
+  background-color: #66666640;
+  transition: all 0.3s ease-in-out;
+}
+
+.quantityNumber {
+  background-color: #f1f1f1;
+  width: 2.4rem;
+  font-size: 1.3rem;
+  /* border-left: 1px solid #66666640;
+  border-right: 1px solid #66666640; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00000080;
+}
+
+.btns {
+  display: flex;
+  gap: 2rem;
+}

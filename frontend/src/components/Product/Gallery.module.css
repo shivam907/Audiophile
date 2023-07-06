@@ -1,0 +1,23 @@
+.img1 {
+  /* width: 44.4rem; */
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery {
+  width: 120rem;
+  /* height: 88rem; */
+  margin: 0 auto;
+  margin-top: 10rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.gallery img {
+  border-radius: 12px;
+}
+.img2 {
+  width: 68%;
+  height: 58rem;
+}

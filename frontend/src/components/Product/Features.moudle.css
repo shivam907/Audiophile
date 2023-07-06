@@ -1,0 +1,61 @@
+.features {
+  margin-top: 10rem;
+  padding-right: 22rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-1 {
+  max-width: 60rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.features-2 h1,
+.features-1 h1 {
+  font-size: 3.2rem;
+  color: #191919;
+}
+
+.features-1 p {
+  font-size: 1.5rem;
+  color: #00000080;
+  line-height: 1.6;
+}
+
+.features-2 {
+  display: flex;
+  width: 40%;
+  justify-self: flex-end;
+  justify-content: flex-end;
+  /* flex-direction: column; */
+  gap: 2.4rem;
+}
+
+.fert {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.fert ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+ul div {
+  display: flex;
+  gap: 1rem;
+}
+
+.spn {
+  color: #d87d4a;
+  font-size: 1.5rem;
+}
+
+.pan {
+  font-size: 1.5rem;
+  color: #00000080;
+}

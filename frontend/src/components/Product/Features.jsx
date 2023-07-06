@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./Features.moudle.css";
+import classes from "./Features.module.css";
 const Features = (props) => {
   return (
     <div className={classes["features"]}>
@@ -45,12 +45,12 @@ const Features = (props) => {
               </span>
               <p className={classes["pan"]}>{props.featureList[3]}</p>
             </div>
-            <div>
+            {/* <div>
               <span className={classes["spn"]}>
                 {props.featureListQuantity[4]}x
               </span>
               <p className={classes["pan"]}>{props.featureList[4]}</p>
-            </div>
+            </div> */}
           </ul>
         </div>
       </div>

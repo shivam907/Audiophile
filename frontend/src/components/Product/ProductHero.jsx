@@ -4,7 +4,7 @@ import classes from "./ProductHero.module.css";
 const ProductHero = (props) => {
   return (
     <div className={`${classes["prod"]} ${classes["product-1"]}`}>
-      <img src={img} alt="" />
+      <img src={props.img} alt="" />
       <div className={classes["content-prod"]}>
         <h1>
           {props.name} <br /> {props.category}

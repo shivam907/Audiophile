@@ -8,7 +8,7 @@ const CartModal = (props) => {
       <div className={classes["cartContent"]}>
         <div className={classes["cartrow1"]}>
           <h1>CART (1)</h1>
-          <a href="">Remove All</a>
+          <div>Remove All</div>
         </div>
         <div className={classes["cartrow2"]}>
           <div className={classes["c1"]}>
@@ -28,9 +28,7 @@ const CartModal = (props) => {
           <p>totall</p>
           <h1>$ 2,999</h1>
         </div>
-        <a className={classes["cartbtn"]} href="">
-          CHECKOUT
-        </a>
+        <div className={classes["cartbtn"]}>CHECKOUT</div>
       </div>
     </div>
   );

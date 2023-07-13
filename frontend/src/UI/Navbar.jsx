@@ -4,8 +4,6 @@ import logo from "../Images/shared/desktop/logo.svg";
 import cart from "../Images/shared/desktop/icon-cart.svg";
 import Cart from "../components/Modals/Cart";
 import { Link } from "react-router-dom";
-import Home from "../pages/Home";
-import Best from "../components/Best/Best";
 const Navbar = () => {
   const [scroll, changeScroll] = React.useState(false);
   const [modal, setModal] = React.useState(false);
@@ -29,9 +27,9 @@ const Navbar = () => {
           <img src={logo} alt="" className="logo" />
           <ul>
             <Link to="/">
-              <a href="">
+              <div>
                 <li>HOME</li>
-              </a>
+              </div>
             </Link>
             <Link to="/Headphones">
               <a href="/headphones.html">

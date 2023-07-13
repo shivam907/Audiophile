@@ -12,18 +12,18 @@ const Footer = () => {
         <div className={classes["foot-nav"]}>
           <img src={logo} alt="" className={classes["logo"]} />
           <ul>
-            <a href="">
+            <div >
               <li>HOME</li>
-            </a>
-            <a href="">
+            </div>
+            <div >
               <li>HEADPHONES</li>
-            </a>
-            <a href="">
+            </div>
+            <div >
               <li>SPEAKERS</li>
-            </a>
-            <a href="">
+            </div>
+            <div >
               <li>EARPHONES</li>
-            </a>
+            </div>
           </ul>
         </div>
         <div className={classes["foot-col-2"]}>

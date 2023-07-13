@@ -139,9 +139,9 @@ const Checkout = () => {
                     <p>grand totall</p>
                     <h1 className={classes["grand"]}>$ 3,049</h1>
                   </div>
-                  <a className={classes["cartbtn"]} onClick={sett}>
+                  <div className={classes["cartbtn"]} onClick={sett}>
                     CONTINUE & PAY
-                  </a>
+                  </div>
                 </div>
               </div>
             </div>

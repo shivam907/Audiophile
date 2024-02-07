@@ -22,13 +22,8 @@ const ProductPage = (props) => {
         />
         <Features
           featureDescription1={props.features}
-          featureListQuantity={[1, 2, 1, 1]}
-          featureList={[
-            "Headphone unit",
-            "Replacement Earcups",
-            "User Manual",
-            "3.5mm 5m Audio Cable",
-          ]}
+          featureListQuantity={props.quantity}
+          featureList={props.items}
         />
         <Gallery
           galleryImage1={props.galleryImage[0]}
@@ -36,12 +31,10 @@ const ProductPage = (props) => {
           galleryImage3={props.galleryImage[2]}
         />
         <Like
-          likeImage1={props.likeImage[0]}
-          likeImage2={props.likeImage[1]}
-          likeImage3={props.likeImage[2]}
-          likeName1={props.likeName[0]}
-          likeName2={props.likeName[1]}
-          likeName3={props.likeName[2]}
+          likeImage={[props.likeImage[0], props.likeImage[1], props.likeImage[2]]}
+          likeName={[props.likeName[0], props.likeName[1], props.likeName[2]]}
+          url={[props.likeUrl[0], props.likeUrl[1], props.likeUrl[2]]}
+
         />
       </Product>
       <Category />

@@ -12,7 +12,7 @@ const ProductLeft = (props) => {
           {props.name} <br /> {props.category}
         </h1>
         <p>{props.description}</p>
-        <Link className={classes.btn} to={props.link}>
+        <Link className={classes.btn} to={"/"+props.link}>
           SEE PRODUCT
         </Link>
       </div>

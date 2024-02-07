@@ -1,6 +1,8 @@
 import React from "react";
 import classes from "./ProductLeft.module.css";
+import { Link } from "react-router-dom";
 const ProductLeft = (props) => {
+  console.log(props.img)
   return (
     <div className={`${classes["prod"]} ${classes["product-1"]}`}>
       <img src={props.img} alt="" />
@@ -10,9 +12,9 @@ const ProductLeft = (props) => {
           {props.name} <br /> {props.category}
         </h1>
         <p>{props.description}</p>
-        <a className={classes.btn} href="/xx99-mark-two-headphones.html">
+        <Link className={classes.btn} to={props.link}>
           SEE PRODUCT
-        </a>
+        </Link>
       </div>
     </div>
   );

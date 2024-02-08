@@ -178,3 +178,8 @@
   display: flex;
   gap: 2rem;
 }
+.cartRows{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

@@ -9,6 +9,7 @@ import Best from "../components/Best/Best";
 import Footer from "../UI/Footer";
 import Product from "../components/Product/Product";
 const ProductPage = (props) => {
+
   return (
     <>
       <Navbar />
@@ -18,7 +19,7 @@ const ProductPage = (props) => {
           name={props.name}
           category={props.category}
           description={props.description}
-          price={"899"}
+          price={props.price}
         />
         <Features
           featureDescription1={props.features}

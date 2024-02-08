@@ -1,7 +1,18 @@
 import React from "react";
 import classes from "./ProductHero.module.css";
+import { useDispatch, useSelector } from "react-redux";
+import { addItem } from "../../features/cartSlice";
 
 const ProductHero = (props) => {
+  const cart=useSelector(state=>state.cart)
+  const dispatch= useDispatch()
+  const cartHandler=()=>{
+    dispatch(addItem({
+      name:props.name,
+      quantity:0
+    }))
+    console.log(cart)
+  }
   return (
     <div className={`${classes["prod"]} ${classes["product-1"]}`}>
       <img src={props.img} alt="" />
@@ -17,7 +28,7 @@ const ProductHero = (props) => {
             <div className={classes["quantityNumber"]}>1</div>
             <div className={classes["minus"]}>-</div>
           </div>
-          <div className="btn">
+          <div className="btn" onClick={cartHandler}>
             ADD TO CART
           </div>
         </div>

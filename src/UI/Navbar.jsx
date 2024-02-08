@@ -7,12 +7,6 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [scroll, changeScroll] = React.useState(false);
   const [modal, setModal] = React.useState(false);
-  const resizeHeaderOnScroll = () => {
-    const distanceY = window.pageYOffset || document.documentElement.scrollTop,
-      shrinkOn = 30;
-    changeScroll(distanceY > shrinkOn ? true : false);
-  };
-  window.addEventListener("scroll", resizeHeaderOnScroll);
   const sett = () => {
     setModal(true);
   };
@@ -22,7 +16,7 @@ const Navbar = () => {
   return (
     <>
       <Cart modal={modal} open={sett} close={resett} />
-      <nav className={`${styles["navv"]}  ${scroll ? styles.shrink : ""}`}>
+      <nav className={`${styles["navv"]}`}>
         <div className={styles.nav}>
           <img src={logo} alt="" className="logo" />
           <ul>

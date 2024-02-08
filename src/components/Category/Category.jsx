@@ -6,6 +6,7 @@ import img3 from "../../Images/shared/desktop/image-speakers.png";
 import img4 from "../../Images/shared/desktop/icon-arrow-right.svg";
 import img5 from "../../Images/shared/desktop/image-earphones.png";
 import img6 from "../../Images/shared/desktop/icon-arrow-right.svg";
+import { Link } from "react-router-dom";
 export const Category = () => {
   return (
     <>
@@ -14,30 +15,30 @@ export const Category = () => {
           <img className={classes["img-icon"]} src={img1} alt="" />
           <h1>HEADPHONES</h1>
           <div className={classes.blockdiv}>
-            <a href="/headphones.html">
+            <Link to="/headphones">
               <p>SHOP</p>
               <img src={img2} alt="" />
-            </a>
+            </Link>
           </div>
         </div>
         <div className={classes["block"]}>
           <img className={classes["img-icon"]} src={img3} alt="" />
           <h1>SPEAKERS</h1>
           <div className={classes.blockdiv}>
-            <a href="/speaker.html">
+            <Link to="/speakers">
               <p>SHOP</p>
               <img src={img4} alt="" />
-            </a>
+            </Link>
           </div>
         </div>
         <div className={classes["block"]}>
           <img className={classes["img-icon"]} src={img5} alt="" />
           <h1>EARPHONES</h1>
           <div className={classes.blockdiv}>
-            <a href="/earphone.html">
+            <Link to="/earphones">
               <p>SHOP</p>
               <img src={img6} alt="" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

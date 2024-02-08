@@ -1,12 +1,13 @@
 import React from "react";
 import classes from "./Speaker2.module.css";
+import { Link } from "react-router-dom";
 const Speaker2 = () => {
   return (
     <div className={classes["speaker-2"]}>
       <h1>ZX7 SPEAKER</h1>
-      <a href="/zx7.html" className={classes["see"]}>
+      <Link to="/zx7-speaker" className={classes["see"]}>
         SEE PRODUCT
-      </a>
+      </Link>
     </div>
   );
 };

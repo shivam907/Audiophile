@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./Hero.module.css";
+import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <div className={classes["hero"]}>
@@ -11,7 +12,7 @@ const Hero = () => {
             Experience natural, life like audio and exceptional build quality
             made for the passionate music enthusiast.
           </p>
-          <a href="/xx99-mark-two-headphones.html">SEE PRODUCT</a>
+          <Link to="/xx99-mark-two-headphones">SEE PRODUCT</Link>
         </div>
       </div>
     </div>

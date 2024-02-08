@@ -44,7 +44,6 @@ const Navbar = () => {
             <img src={cart} alt="" />
           </div>
         </div>
-        {/* {modal && <Cart />} */}
       </nav>
     </>
   );

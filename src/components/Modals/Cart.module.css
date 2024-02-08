@@ -183,3 +183,16 @@
   flex-direction: column;
   gap: 1rem;
 }
+.empty{
+  color: #10101080;
+  font-size: 1.5rem;
+  font-weight: 700;
+   text-align: center;
+   padding: 7rem 0;
+}
+.remove{
+  font-size: 1.5rem;
+  color: #10101080;
+  text-decoration: underline;
+  align-self: flex-end;
+}

@@ -33,6 +33,9 @@ const CartModal = (props) => {
       }
     })
   })
+  if (cart.length == 0) {
+    arr.push(<p className={classes.empty}>Your cart is empty</p>);
+  }
   setCartItem(arr);
   },[])
   let content = (
@@ -40,11 +43,9 @@ const CartModal = (props) => {
       <div className={classes["cartContent"]}>
         <div className={classes["cartrow1"]}>
           <h1>CART ({cart.length})</h1>
-          <div>Remove All</div>
+          <div className={classes.remove}>Remove All</div>
         </div>
-        <div className={classes.cartRows}>
-        {cartItem}
-        </div>
+        <div className={classes.cartRows}>{cartItem}</div>
         <div className={classes["cartrow3"]}>
           <p>totall</p>
           <h1>$ {price}</h1>

@@ -5,7 +5,6 @@ import cart from "../Images/shared/desktop/icon-cart.svg";
 import Cart from "../components/Modals/Cart";
 import { Link } from "react-router-dom";
 const Navbar = () => {
-  const [scroll, changeScroll] = React.useState(false);
   const [modal, setModal] = React.useState(false);
   const sett = () => {
     setModal(true);

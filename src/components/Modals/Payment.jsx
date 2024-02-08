@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import classes from "./Payment.module.css";
+import { Link } from "react-router-dom";
 import img from "../..//Images/cart/image-xx99-mark-two-headphones.jpg";
 const CartModal = (props) => {
   let content = (
@@ -26,7 +27,7 @@ const CartModal = (props) => {
             <p>$ 2,999</p>
           </div>
         </div>
-        <a className={classes["cartbtn"]}>BACK tO HOME</a>
+        <Link className={classes["cartbtn"]} To="/">BACK TO HOME</Link>
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 import { createSlice, nanoid } from "@reduxjs/toolkit";
 
 const initialState = {
-  cart: [{ id: 1, name: "Hello world", quantity: 0 }],
+  cart: [],
 };
 export const cartSlice = createSlice({
   name: "cart",
@@ -13,11 +13,33 @@ export const cartSlice = createSlice({
         text: action.payload.name,
         quantity: action.payload.quantity,
       };
-      state.cart.push(item);
-      console.log(action)
+      let exist=false;
+        // state.cart.forEach(item=>{
+        //   console.log(item.name)
+        //   if(item.name===action.payload.name){
+        //     exist=true;
+        //     item.quantity+=action.payload.quantity;
+        //   }
+        // })
+        for(let i=0;i<state.cart.length;i++){
+          console.log(state.cart[i].text)
+          if(state.cart[i].text==action.payload.name){
+            state.cart[i].quantity+=action.payload.quantity;
+            exist=true;
+          }
+        }
+        console.log(state.cart.length)
+        if(!exist){
+          state.cart.push(item);
+        }
     },
     removeItem: (state, action) => {
-      state.cart = state.cart.filter((item) => item.id !== action.payload);
+        for(let i=0;i<state.cart.length;i++){
+        console.log(state.cart[i].text)
+        if(state.cart[i].text==action.payload.name){
+          state.cart[i].quantity-=action.payload.quantity;
+        }
+      }
     },
   },
 });

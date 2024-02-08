@@ -4,14 +4,23 @@ import { useDispatch, useSelector } from "react-redux";
 import { addItem } from "../../features/cartSlice";
 
 const ProductHero = (props) => {
+  const [quantity, setQuantity]= React.useState(1)
   const cart=useSelector(state=>state.cart)
   const dispatch= useDispatch()
   const cartHandler=()=>{
-    dispatch(addItem({
-      name:props.name,
-      quantity:0
-    }))
+    dispatch(
+      addItem({
+        name: props.name,
+        quantity: quantity,
+      })
+    );
     console.log(cart)
+  }
+  const plusHandler=()=>{
+    setQuantity(prev=>prev+1);
+  }
+  const minusHandler=()=>{
+    setQuantity(prev=>prev<=1?1:prev-1);
   }
   return (
     <div className={`${classes["prod"]} ${classes["product-1"]}`}>
@@ -24,9 +33,9 @@ const ProductHero = (props) => {
         <h1 className={classes["price"]}>$ {props.price}</h1>
         <div className={classes["btns"]}>
           <div className={classes["quantity"]}>
-            <div className={classes["plus"]}>+</div>
-            <div className={classes["quantityNumber"]}>1</div>
-            <div className={classes["minus"]}>-</div>
+            <div className={classes["plus"]} onClick={plusHandler}>+</div>
+            <div className={classes["quantityNumber"]}>{quantity}</div>
+            <div className={classes["minus"]} onClick={minusHandler}>-</div>
           </div>
           <div className="btn" onClick={cartHandler}>
             ADD TO CART

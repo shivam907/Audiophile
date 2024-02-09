@@ -320,3 +320,32 @@
 .cartbtn:hover {
   background-color: #d6926a;
 }
+.cod{
+  display: flex;
+  gap: 4rem;
+  padding: 2rem;
+}
+.cod p{
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.6;
+  color: #10101080;
+}
+.label{
+  display: flex;
+  justify-content: space-between;
+}
+.err p{
+  color: red !important;
+}
+.err input{
+  border: 1px solid red;
+}
+.err input::placeholder{
+  color: #ff000080;
+}
+.error{
+  font-weight: 400 !important;
+  font-size: 1rem !important;
+  align-self: flex-end;
+}

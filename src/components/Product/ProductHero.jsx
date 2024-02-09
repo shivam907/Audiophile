@@ -2,6 +2,8 @@ import React from "react";
 import classes from "./ProductHero.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { addItem } from "../../features/cartSlice";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const ProductHero = (props) => {
   const [quantity, setQuantity]= React.useState(1)
@@ -9,6 +11,9 @@ const ProductHero = (props) => {
   const dispatch= useDispatch()
   const cartHandler=()=>{
     console.log(props.shortName)
+    toast.success("Successfully Added To Cart",{
+      className: classes.toast
+    });
     dispatch(
       addItem({
         name: props.shortName,
@@ -43,7 +48,9 @@ const ProductHero = (props) => {
             ADD TO CART
           </div>
         </div>
-      </div>
+      </div>     
+
+      <ToastContainer/>
     </div>
   );
 };

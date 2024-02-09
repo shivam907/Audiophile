@@ -1,6 +1,5 @@
 import React from "react";
 import classes from "./Checkout.module.css";
-import img from "../../Images/cart/image-xx99-mark-two-headphones.jpg";
 import Payment from "../Modals/Payment";
 import data from "../../Data/products.json"
 import { useSelector } from "react-redux";
@@ -18,7 +17,7 @@ const Checkout = () => {
     let arr=[]
     cart.items.forEach(item=>{
       data.products.forEach(i=>{
-        if(i.shortName==item.text){
+        if(i.shortName===item.text){
           arr.push(
             <div className={classes["cartrow2"]}>
               <div className={classes["c1"]}>

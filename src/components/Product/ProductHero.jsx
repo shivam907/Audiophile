@@ -8,9 +8,10 @@ const ProductHero = (props) => {
   const cart=useSelector(state=>state.cart)
   const dispatch= useDispatch()
   const cartHandler=()=>{
+    console.log(props.shortName)
     dispatch(
       addItem({
-        name: props.name,
+        name: props.shortName,
         quantity: quantity,
         price: props.price
       })

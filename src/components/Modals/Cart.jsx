@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import classes from "./Cart.module.css";
 import { useSelector, useDispatch } from "react-redux";
 import { addItem, removeItem } from "../../features/cartSlice";
+import { Link } from "react-router-dom";
 import data from "../../Data/products.json"
 const CartModal = () => {
   const dispatch = useDispatch();
@@ -15,14 +16,14 @@ const CartModal = () => {
   let arr=[]
   cart.items.forEach(item=>{
     data.products.forEach(i=>{
-      if(i.name===item.text){
+      if(i.shortName===item.text){
         console.log(i)
         arr.push(
           <div className={classes["cartrow2"]}>
             <div className={classes["c1"]}>
               <img src={i.cartImage} alt="" />
               <div className={classes["card"]}>
-                <h1>{i.name}</h1>
+                <h1>{i.shortName}</h1>
                 <span className={classes["pricec"]}>$ {item.price}</span>
               </div>
             </div>
@@ -32,7 +33,7 @@ const CartModal = () => {
                 onClick={() =>
                   dispatch(
                     addItem({
-                      name: i.name,
+                      name: i.shortName,
                       quantity: 1,
                     })
                   )
@@ -41,14 +42,17 @@ const CartModal = () => {
                 +
               </div>
               <div className={classes["quantityNumber"]}>{item.quantity}</div>
-              <div className={classes["minus"]} onClick={() =>
+              <div
+                className={classes["minus"]}
+                onClick={() =>
                   dispatch(
                     addItem({
-                      name: i.name,
+                      name: i.shortName,
                       quantity: -1,
                     })
                   )
-                }>
+                }
+              >
                 -
               </div>
             </div>
@@ -74,7 +78,7 @@ const CartModal = () => {
           <p>totall</p>
           <h1>$ {cart.price}</h1>
         </div>
-        <div className={classes["cartbtn"]}>CHECKOUT</div>
+        <Link to="/checkout" className={classes["cartbtn"]}>CHECKOUT</Link>
       </div>
     </div>
   );

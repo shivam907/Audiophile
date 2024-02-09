@@ -30,6 +30,7 @@ function App() {
               element={
                 <ProductPage
                   name={prod.name}
+                  shortName={prod.shortName}
                   img={prod.image.desktop}
                   category={prod.category}
                   description={prod.description}

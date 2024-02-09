@@ -17,6 +17,7 @@ const ProductPage = (props) => {
         <ProductHero
           img={props.img}
           name={props.name}
+          shortName={props.shortName}
           category={props.category}
           description={props.description}
           price={props.price}
@@ -32,10 +33,13 @@ const ProductPage = (props) => {
           galleryImage3={props.galleryImage[2]}
         />
         <Like
-          likeImage={[props.likeImage[0], props.likeImage[1], props.likeImage[2]]}
+          likeImage={[
+            props.likeImage[0],
+            props.likeImage[1],
+            props.likeImage[2],
+          ]}
           likeName={[props.likeName[0], props.likeName[1], props.likeName[2]]}
           url={[props.likeUrl[0], props.likeUrl[1], props.likeUrl[2]]}
-
         />
       </Product>
       <Category />

@@ -1,13 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import classes from "./Cart.module.css";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import data from "../../Data/products.json"
 import img from "../..//Images/cart/image-xx99-mark-two-headphones.jpg";
 const CartModal = (props) => {
+  const dispatch=useDispatch()
   const cart = useSelector(state=>state.cart)
   const [cartItem, setCartItem] = React.useState()
   const [price, setPrice]=React.useState(0)
+  const [quantity, setQuantity]=React.useState(0)
+    const plusHandler = () => {
+      setQuantity((prev) => prev + 1);
+    };
+    const minusHandler = () => {
+      setQuantity((prev) => (prev <= 1 ? 1 : prev - 1));
+    };
   React.useEffect(()=>{
   let arr=[]
   let price=0;
@@ -15,21 +23,28 @@ const CartModal = (props) => {
     data.products.forEach(i=>{
       if(i.name==item.text){
         console.log(i)
+        setQuantity(item.quantity)
         setPrice(prev=> prev+ i.price*item.quantity)
-        arr.push(<div className={classes["cartrow2"]}>
-          <div className={classes["c1"]}>
-            <img src={i.cartImage} alt="" />
-            <div className={classes["card"]}>
-              <h1>{i.name}</h1>
-              <span className={classes["pricec"]}>$ {i.price}</span>
+        arr.push(
+          <div className={classes["cartrow2"]}>
+            <div className={classes["c1"]}>
+              <img src={i.cartImage} alt="" />
+              <div className={classes["card"]}>
+                <h1>{i.name}</h1>
+                <span className={classes["pricec"]}>$ {i.price}</span>
+              </div>
+            </div>
+            <div className={classes["quantity"]}>
+              <div className={classes["plus"]} onClick={()=>item.quantity+=1}>
+                +
+              </div>
+              <div className={classes["quantityNumber"]}>{item.quantity}</div>
+              <div className={classes["minus"]} onClick={minusHandler}>
+                -
+              </div>
             </div>
           </div>
-          <div className={classes["quantity"]}>
-            <div className={classes["plus"]}>+</div>
-            <div className={classes["quantityNumber"]}>{item.quantity}</div>
-            <div className={classes["minus"]}>-</div>
-          </div>
-        </div>)
+        );
       }
     })
   })

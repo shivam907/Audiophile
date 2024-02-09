@@ -100,3 +100,6 @@
   display: flex;
   gap: 2rem;
 }
+.btn{
+  cursor: pointer;
+}

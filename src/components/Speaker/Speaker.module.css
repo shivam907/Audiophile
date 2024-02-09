@@ -62,9 +62,11 @@
   background-color: #191919;
   font-size: 1.3rem;
   padding: 14px 32px;
+  transition: all 0.1s ease-in-out;
   letter-spacing: 0.2rem;
 }
 
 .content-2 a:hover {
   background-color: #494949;
+  transition: all 0.1s ease-in-out;
 }

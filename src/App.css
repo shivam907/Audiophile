@@ -15,9 +15,12 @@
   background-color: #d87d4a !important;
   font-size: 1.3rem;
   padding: 14px 32px;
+  cursor: pointer;
   letter-spacing: 0.2rem;
+  transition: all 0.1s ease-in-out;
 }
 
 .btn:hover {
+  transition: all 0.1s ease-in-out;
   background-color: #d89066 !important;
 }

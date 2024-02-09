@@ -13,7 +13,11 @@ const CartModal = () => {
     dispatch(removeItem())
   }
   React.useEffect(()=>{
-  let arr=[]
+  let arr=[]  
+  if (cart.items.length === 0) {
+    arr.push(<p className={classes.empty}>Your cart is empty</p>);
+  }
+  else {
   cart.items.forEach(item=>{
     data.products.forEach(i=>{
       if(i.shortName===item.text){
@@ -61,9 +65,7 @@ const CartModal = () => {
       }
     })
   })
-  if (cart.items.length === 0) {
-    arr.push(<p className={classes.empty}>Your cart is empty</p>);
-  }
+}
   setCartItem(arr);
   },[cart,dispatch])
   let content = (

@@ -349,3 +349,6 @@
   font-size: 1rem !important;
   align-self: flex-end;
 }
+.toast{
+  font-size: 3.5rem;
+}

@@ -4,6 +4,8 @@ import Payment from "../Modals/Payment";
 import data from "../../Data/products.json"
 import Input from "../Input/Input";
 import { useSelector } from "react-redux";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Checkout = () => {
   const cart = useSelector(state=>state.cart)
   const [cartItem, setCartItem] = React.useState()
@@ -19,9 +21,49 @@ const Checkout = () => {
   const country = React.useRef();
   const money = React.useRef();
   const pin = React.useRef();
+  const [nameError, setNameError] = React.useState(false);
+  const [emailError, setEmailError] = React.useState(false);
+  const [numberError, setNumberError] = React.useState(false);
+  const [addressError, setAddressError] = React.useState(false);
+  const [zipError, setZipError] = React.useState(false);
+  const [cityError, setCityError] = React.useState(false);
+  const [stateError, setStateError] = React.useState(false);
+  const [countryError, setCountryError] = React.useState(false);
+  const [moneyError, setMoneyError] = React.useState(false);
+  const [pinError, setPinError] = React.useState(false);
   const sett = () => {
     console.log(name.current.value.length);
     // setPay(true);
+    if(name.current.value.length==0) setNameError(true);
+    else setNameError(false)
+    if(email.current.value.length==0 || !email.current.value.includes('@')) setEmailError(true);
+    else setEmailError(false)
+    if(number.current.value.length<10) setNumberError(true);
+    else setNumberError(false)
+    if(address.current.value.length==0) setAddressError(true);
+    else setAddressError(false)
+    if(zip.current.value.length<6) setZipError(true);
+    else setZipError(false)
+    if(city.current.value.length==0) setCityError(true);
+    else setCityError(false)
+    if(state.current.value.length==0) setStateError(true);
+    else setStateError(false)
+    if(country.current.value.length==0) setCountryError(true);
+    else setCountryError(false)
+    if(money.current.value.length==0) setMoneyError(true);
+    else setMoneyError(false)
+    if(pin.current.value.length==0) setPinError(true);
+    else setPinError(false)
+
+    if(nameError||emailError||numberError||addressError||zipError||cityError||stateError||countryError||moneyError||pinError){
+          toast.error("Successfully Added To Cart", {
+            className: classes.toast,
+          });
+        }
+        else{
+      setPay(true)
+
+    }
   };
   const resett = () => {
     setPay(false);
@@ -50,7 +92,7 @@ const Checkout = () => {
   },[cart])
   return (
     <>
-      <Payment modal={pay} open={sett} close={resett} />
+      {pay&&<Payment modal={pay} open={sett} close={resett} />}
       <div className={classes["body"]}>
         <div className={classes["checkout"]}>
           <div className={classes["back"]}>
@@ -67,18 +109,21 @@ const Checkout = () => {
                     reff={name}
                     type="text"
                     placeholder="Shivam kaushal"
+                    error={nameError}
                   />
                   <Input
                     label="Email Address"
                     type="email"
                     placeholder="shivamkaushal907@gmail.com"
                     reff={email}
+                    error={emailError}
                   />
                   <Input
                     label="Phone Number"
                     type="tel"
                     placeholder="+91 9999999999"
                     reff={number}
+                    error={numberError}
                   />
                 </div>
               </div>
@@ -90,6 +135,7 @@ const Checkout = () => {
                     type="text"
                     placeholder="111 Model Town"
                     reff={address}
+                    error={addressError}
                   />
                   <div className={classes["billi"]}>
                     <Input
@@ -97,12 +143,14 @@ const Checkout = () => {
                       type="number"
                       placeholder="146001"
                       reff={zip}
+                      error={zipError}
                     />
                     <Input
                       label="City"
                       type="text"
                       placeholder="Hoshiarpur"
                       reff={city}
+                      error={cityError}
                     />
                   </div>
                   <div className={classes["billi"]}>
@@ -111,12 +159,14 @@ const Checkout = () => {
                       type="text"
                       placeholder="Punjab"
                       reff={state}
+                      error={stateError}
                     />
                     <Input
                       label="Country"
                       type="text"
                       placeholder="India"
                       reff={country}
+                      error={countryError}
                     />
                   </div>
                 </div>
@@ -131,7 +181,7 @@ const Checkout = () => {
                     <form className={classes["billi2"]}>
                       <div className={classes["bool"]}>
                         <input
-                          checked
+                          defaultChecked
                           onClick={() => setSelected(0)}
                           name="A"
                           type="radio"
@@ -153,8 +203,8 @@ const Checkout = () => {
                   {selected == 0 ? (
                     <div className={classes["billi"]}>
 
-                      <Input label="e-Money Number" type="number" placeholder="12345678" reff={money} />
-                      <Input label="e-Money Pin" type="number" placeholder="1234" reff={pin} />
+                      <Input label="e-Money Number" type="number" placeholder="12345678" reff={money} error={moneyError}/>
+                      <Input label="e-Money Pin" type="number" placeholder="1234" reff={pin} error={pinError} />
 
                     </div>
                   ) : (
@@ -205,6 +255,8 @@ const Checkout = () => {
           </div>
         </div>
       </div>
+
+      <ToastContainer/>
     </>
   );
 };

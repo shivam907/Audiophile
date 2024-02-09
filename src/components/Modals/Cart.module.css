@@ -195,4 +195,10 @@
   color: #10101080;
   text-decoration: underline;
   align-self: flex-end;
+  transition: 0.1s all;
+}
+.remove:hover{
+  cursor: pointer;
+  color: #10101099;
+  transition: 0.1s all;
 }

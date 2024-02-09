@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import classes from "./Cart.module.css";
 import { useSelector, useDispatch } from "react-redux";
-import { addItem } from "../../features/cartSlice";
+import { addItem, removeItem } from "../../features/cartSlice";
 import data from "../../Data/products.json"
 import img from "../..//Images/cart/image-xx99-mark-two-headphones.jpg";
 const CartModal = (props) => {
@@ -11,12 +11,9 @@ const CartModal = (props) => {
   const [cartItem, setCartItem] = React.useState()
   const [price, setPrice]=React.useState(0)
   const [quantity, setQuantity] = React.useState(0);
-  const plusHandler = () => {
-    setQuantity((prev) => prev + 1);
-  };
-  const minusHandler = () => {
-    setQuantity((prev) => (prev <= 1 ? 1 : prev - 1));
-  };
+  const remove=()=>{
+    dispatch(removeItem())
+  }
   React.useEffect(()=>{
   let arr=[]
   let price=0;
@@ -75,8 +72,8 @@ const CartModal = (props) => {
     <div className={classes["cart"]}>
       <div className={classes["cartContent"]}>
         <div className={classes["cartrow1"]}>
-          <h1>CART ({cart.length})</h1>
-          <div className={classes.remove}>Remove All</div>
+          <h1>CART ({cart.items.length})</h1>
+          <div onClick={remove} className={classes.remove}>Remove All</div>
         </div>
         <div className={classes.cartRows}>{cartItem}</div>
         <div className={classes["cartrow3"]}>

@@ -296,3 +296,9 @@
 .body {
   background-color: #f1f1f1;
 }
+
+.cartRows{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

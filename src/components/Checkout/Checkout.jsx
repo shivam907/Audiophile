@@ -2,7 +2,11 @@ import React from "react";
 import classes from "./Checkout.module.css";
 import img from "../../Images/cart/image-xx99-mark-two-headphones.jpg";
 import Payment from "../Modals/Payment";
+import data from "../../Data/products.json"
+import { useSelector } from "react-redux";
 const Checkout = () => {
+  const cart = useSelector(state=>state.cart)
+  const [cartItem, setCartItem] = React.useState()
   const [pay, setPay] = React.useState(false);
   const sett = () => {
     setPay(true);
@@ -10,6 +14,28 @@ const Checkout = () => {
   const resett = () => {
     setPay(false);
   };
+  React.useEffect(()=>{
+    let arr=[]
+    cart.items.forEach(item=>{
+      data.products.forEach(i=>{
+        if(i.shortName==item.text){
+          arr.push(
+            <div className={classes["cartrow2"]}>
+              <div className={classes["c1"]}>
+                <img src={i.cartImage} alt="" />
+                <div className={classes["card"]}>
+                  <h1>{i.shortName}</h1>
+                  <span className={classes["pricec"]}>$ {i.price}</span>
+                </div>
+              </div>
+              <span className={classes["xx"]}>x {item.quantity}</span>
+            </div>
+          );
+        }
+      })
+    })
+    setCartItem(arr)
+  },[cart])
   return (
     <>
       <Payment modal={pay} open={sett} close={resett} />
@@ -114,20 +140,13 @@ const Checkout = () => {
                   <div className={classes["cartrow1"]}>
                     <h1>SUMMARY</h1>
                   </div>
-                  <div className={classes["cartrow2"]}>
-                    <div className={classes["c1"]}>
-                      <img src={img} alt="" />
-                      <div className={classes["card"]}>
-                        <h1>XX99 MK II</h1>
-                        <span className={classes["pricec"]}>$ 2,999</span>
-                      </div>
-                    </div>
-                    <span className={classes["xx"]}>x 1</span>
+                  <div className={classes.cartRows}>
+                  {cartItem}
                   </div>
                   <div className={classes["cr2"]}>
                     <div className={classes["cr3"]}>
                       <p>totall</p>
-                      <h1>$ 2,999</h1>
+                      <h1>$ {cart.price}</h1>
                     </div>
 
                     <div className={classes["cr3"]}>
@@ -137,7 +156,7 @@ const Checkout = () => {
                   </div>
                   <div className={classes["cr3"]}>
                     <p>grand totall</p>
-                    <h1 className={classes["grand"]}>$ 3,049</h1>
+                    <h1 className={classes["grand"]}>$ {cart.price+50}</h1>
                   </div>
                   <div className={classes["cartbtn"]} onClick={sett}>
                     CONTINUE & PAY

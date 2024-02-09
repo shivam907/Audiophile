@@ -4,25 +4,19 @@ import classes from "./Cart.module.css";
 import { useSelector, useDispatch } from "react-redux";
 import { addItem, removeItem } from "../../features/cartSlice";
 import data from "../../Data/products.json"
-import img from "../..//Images/cart/image-xx99-mark-two-headphones.jpg";
-const CartModal = (props) => {
+const CartModal = () => {
   const dispatch = useDispatch();
   const cart = useSelector(state=>state.cart)
   const [cartItem, setCartItem] = React.useState()
-  const [price, setPrice]=React.useState(0)
-  const [quantity, setQuantity] = React.useState(0);
   const remove=()=>{
     dispatch(removeItem())
   }
   React.useEffect(()=>{
   let arr=[]
-  let price=0;
   cart.items.forEach(item=>{
     data.products.forEach(i=>{
-      if(i.name==item.text){
+      if(i.name===item.text){
         console.log(i)
-        setQuantity(item.quantity);
-        setPrice(prev=>prev+i.price*item.quantity)
         arr.push(
           <div className={classes["cartrow2"]}>
             <div className={classes["c1"]}>
@@ -63,7 +57,7 @@ const CartModal = (props) => {
       }
     })
   })
-  if (cart.items.length == 0) {
+  if (cart.items.length === 0) {
     arr.push(<p className={classes.empty}>Your cart is empty</p>);
   }
   setCartItem(arr);

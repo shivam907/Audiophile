@@ -17,7 +17,7 @@ export const cartSlice = createSlice({
       let exist = false;
       for (let i = 0; i < state.cart.items.length; i++) {
         console.log(state.cart.items[i].text);
-        if (state.cart.items[i].text == action.payload.name) {
+        if (state.cart.items[i].text === action.payload.name) {
           state.cart.items[i].quantity += action.payload.quantity;
           exist = true;
         }

@@ -12,6 +12,7 @@ const ProductHero = (props) => {
       addItem({
         name: props.name,
         quantity: quantity,
+        price: props.price
       })
     );
     console.log(cart)

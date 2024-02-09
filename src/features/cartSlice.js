@@ -1,7 +1,7 @@
 import { createSlice, nanoid } from "@reduxjs/toolkit";
 
 const initialState = {
-  cart: [],
+  cart: { items: [], price: 0 },
 };
 export const cartSlice = createSlice({
   name: "cart",
@@ -12,32 +12,32 @@ export const cartSlice = createSlice({
         id: nanoid(),
         text: action.payload.name,
         quantity: action.payload.quantity,
+        price: action.payload.price,
       };
-      let exist=false;
-        // state.cart.forEach(item=>{
-        //   console.log(item.name)
-        //   if(item.name===action.payload.name){
-        //     exist=true;
-        //     item.quantity+=action.payload.quantity;
-        //   }
-        // })
-        for(let i=0;i<state.cart.length;i++){
-          console.log(state.cart[i].text)
-          if(state.cart[i].text==action.payload.name){
-            state.cart[i].quantity+=action.payload.quantity;
-            exist=true;
-          }
+      let exist = false;
+      for (let i = 0; i < state.cart.items.length; i++) {
+        console.log(state.cart.items[i].text);
+        if (state.cart.items[i].text == action.payload.name) {
+          state.cart.items[i].quantity += action.payload.quantity;
+          exist = true;
         }
-        console.log(state.cart.length)
-        if(!exist){
-          state.cart.push(item);
-        }
+      }
+      console.log(state.cart.items.length);
+      if (!exist) {
+        state.cart.items.push(item);
+      }
+      state.cart.items = state.cart.items.filter(i=>i.quantity>0)
+      let p=0;
+      for(let i=0;i<state.cart.items.length;i++){
+        p+=state.cart.items[i].quantity*state.cart.items[i].price;
+      }
+      state.cart.price=p;
     },
     removeItem: (state, action) => {
-        for(let i=0;i<state.cart.length;i++){
-        console.log(state.cart[i].text)
-        if(state.cart[i].text==action.payload.name){
-          state.cart[i].quantity-=action.payload.quantity;
+      for (let i = 0; i < state.cart.items.length; i++) {
+        console.log(state.cart.items[i].text);
+        if (state.cart.items[i].text == action.payload.name) {
+          state.cart.items[i].quantity -= action.payload.quantity;
         }
       }
     },

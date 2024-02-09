@@ -45,8 +45,8 @@ const CartModal = (props) => {
       <div className={classes["payment"]}>
         <img src="/Images/done.svg" alt="" />
         <h1>
-          THANK YOU <br />
-          FOR YOUR ORDER
+          THANK YOU FOR<br />
+          YOUR ORDER
         </h1>
         <p>you will receive email confirmation shortly</p>
         <div className={classes["paybox"]}>

@@ -107,26 +107,24 @@ const Checkout = () => {
                     <div className={classes["bill2"]}>
                       <p>Payment Method</p>
                     </div>
-                    <div className={classes["billi2"]}>
+                    <form className={classes["billi2"]}>
                       <div className={classes["bool"]}>
-                        <input type="radio" placeholder="e-Money" />
+                        <input name="A" type="radio" placeholder="e-Money" />
                         <h1>e-Money</h1>
                       </div>
                       <div className={classes["bool"]}>
-                        <input type="radio" placeholder="Cash on Delivery" />
+                        <input name="A" type="radio" placeholder="Cash on Delivery" />
                         <h1>Cash on Delivery</h1>
                       </div>
-                    </div>
+                    </form>
                   </div>
                   <div className={classes["billi"]}>
                     <div className={classes["bill1"]}>
                       <p>e-Money Number</p>
-
                       <input type="number" placeholder="12345678" />
                     </div>
                     <div className={classes["bill1"]}>
                       <p>e-Money Pin</p>
-
                       <input type="number" placeholder="1234" />
                     </div>
                   </div>

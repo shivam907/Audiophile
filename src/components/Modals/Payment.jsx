@@ -2,8 +2,39 @@ import React from "react";
 import ReactDOM from "react-dom";
 import classes from "./Payment.module.css";
 import { Link } from "react-router-dom";
-import img from "../..//Images/cart/image-xx99-mark-two-headphones.jpg";
+import data from "../../Data/products.json";
+import { useSelector } from "react-redux";
 const CartModal = (props) => {
+  const cart = useSelector((state) => state.cart);
+  const [cartItem, setCartItem] = React.useState();
+  React.useEffect(() => {
+    let arr = [];
+    // cart.items.forEach((item) => {
+    let item = cart.items[0];
+    data.products.forEach((i) => {
+      if (i.shortName === item.text) {
+        arr.push(
+          <div className={classes.pb1}>
+          <div className={classes["pb"]}>
+            <img src={i.cartImage} alt="" />
+            <div className={classes["pbc"]}>
+              <h1>{i.shortName}</h1>
+              <p>$ {i.price}</p>
+            </div>
+            <p className={classes["qbc"]}>x {item.quantity}</p>
+          </div>
+          {cart.items.length>1 &&
+          <div className={classes.pb3}>
+            <p>and {cart.items.length-1} other item(s)</p>
+          </div>
+          }
+          </div>
+        );
+      }
+    });
+    // });
+    setCartItem(arr);
+  }, [cart]);
   let content = (
     <div className={classes.pay}>
       <div className={classes["payment"]}>
@@ -14,20 +45,15 @@ const CartModal = (props) => {
         </h1>
         <p>you will receive email confirmation shortly</p>
         <div className={classes["paybox"]}>
-          <div className={classes["pb1"]}>
-            <img src={img} alt="" />
-            <div className={classes["pbc"]}>
-              <h1>XX99 MK II</h1>
-              <p>$ 2,999</p>
-            </div>
-            <p className={classes["qbc"]}>x 1</p>
-          </div>
+        {cartItem}
           <div className={classes["pb2"]}>
             <h1>GRAND TOTAL</h1>
-            <p>$ 2,999</p>
+            <p>$ {cart.price}</p>
           </div>
         </div>
-        <Link className={classes["cartbtn"]} To="/">BACK TO HOME</Link>
+        <Link className={classes["cartbtn"]} to="/">
+          BACK TO HOME
+        </Link>
       </div>
     </div>
   );
@@ -40,7 +66,7 @@ const Payment = (props) => {
       {props.modal && (
         <>
           <div className={classes["overlay"]} onClick={props.close} />
-          <CartModal {...props} />
+          <CartModal />
         </>
       )}
     </>

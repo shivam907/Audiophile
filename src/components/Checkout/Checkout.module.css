@@ -292,6 +292,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .body {
   background-color: #f1f1f1;
@@ -315,4 +316,7 @@
 .bill1 input:focus{
   outline: none;
   border: 1px solid #d87d4a !important;
+}
+.cartbtn:hover {
+  background-color: #d6926a;
 }

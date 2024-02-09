@@ -10,18 +10,19 @@ const Footer = () => {
     <footer>
       <div className={classes["content5"]}>
         <div className={classes["foot-nav"]}>
+          <div className={classes.line}></div>
           <img src={logo} alt="" className={classes["logo"]} />
           <ul>
-            <div >
+            <div>
               <li>HOME</li>
             </div>
-            <div >
+            <div>
               <li>HEADPHONES</li>
             </div>
-            <div >
+            <div>
               <li>SPEAKERS</li>
             </div>
-            <div >
+            <div>
               <li>EARPHONES</li>
             </div>
           </ul>

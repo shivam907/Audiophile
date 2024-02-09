@@ -4,10 +4,11 @@ footer {
 }
 
 .content5 {
-  padding: 7.5rem 0;
+  padding: 5.5rem 0;
   display: flex;
   gap: 4.8rem;
   flex-direction: column;
+  position: relative;
   /* margin: 0 14.1rem; */
   width: 120rem;
   margin: 0 auto;
@@ -86,4 +87,12 @@ a {
 }
 
 a:hover {
+}
+
+.line{
+  width: 10rem;
+  height: 5px;
+  background-color:#d87d4a;
+  position: absolute;
+  top: 0;
 }

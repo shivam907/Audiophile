@@ -81,6 +81,7 @@
 .plus:hover,
 .minus:hover {
   background-color: #66666640;
+  color: #d87d4a;
   transition: all 0.3s ease-in-out;
 }
 

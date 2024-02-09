@@ -34,36 +34,98 @@ const Checkout = () => {
   const sett = () => {
     console.log(name.current.value.length);
     // setPay(true);
-    if(name.current.value.length==0) setNameError(true);
-    else setNameError(false)
-    if(email.current.value.length==0 || !email.current.value.includes('@')) setEmailError(true);
-    else setEmailError(false)
-    if(number.current.value.length<10) setNumberError(true);
-    else setNumberError(false)
-    if(address.current.value.length==0) setAddressError(true);
-    else setAddressError(false)
-    if(zip.current.value.length<6) setZipError(true);
-    else setZipError(false)
-    if(city.current.value.length==0) setCityError(true);
-    else setCityError(false)
-    if(state.current.value.length==0) setStateError(true);
-    else setStateError(false)
-    if(country.current.value.length==0) setCountryError(true);
-    else setCountryError(false)
-    if(money.current.value.length==0) setMoneyError(true);
-    else setMoneyError(false)
-    if(pin.current.value.length==0) setPinError(true);
-    else setPinError(false)
-
-    if(nameError||emailError||numberError||addressError||zipError||cityError||stateError||countryError||moneyError||pinError){
-          toast.error("Successfully Added To Cart", {
-            className: classes.toast,
-          });
-        }
-        else{
-      setPay(true)
-
+    let c=0, ct=0;
+    if(name.current.value.length==0) {
+      c=1
+      setNameError(true);
     }
+    else {
+      ct=1
+      setNameError(false)
+    }
+    if(email.current.value.length==0 || !email.current.value.includes('@')) {
+      setEmailError(true);
+      c=1
+    }
+    else {
+      ct=1
+      setEmailError(false)
+    }
+    if(number.current.value.length<10) {
+      setNumberError(true);
+      c=1
+    }
+    else {
+      ct=1
+      setNumberError(false)
+    }
+    if(address.current.value.length==0) {
+      setAddressError(true);
+      c=1
+    }
+    else {
+      ct=1
+      setAddressError(false)
+    }
+    if(zip.current.value.length<6) {
+      setZipError(true);
+      c=1
+    }
+    else {
+      ct=1
+      setZipError(false)
+    }
+    if(city.current.value.length==0) {
+      setCityError(true);
+      c=1
+    }
+    else {
+      ct=1
+      setCityError(false)
+    }
+    if(state.current.value.length==0) {
+      setStateError(true);
+      c=1
+    }
+    else {
+      ct=1
+      setStateError(false)
+    }
+    if(country.current.value.length==0) {
+      c=1
+      setCountryError(true);
+    }
+    else {
+      ct=1
+      setCountryError(false)
+    }
+    if(selected==0 && money.current.value.length==0) {
+      c=1
+      setMoneyError(true);
+    }
+    else {
+      ct=1
+      setMoneyError(false)
+    }
+    if(selected==0 && pin.current.value.length==0) {
+      c=1
+      setPinError(true);
+    }
+    else {
+      ct=1
+      setPinError(false)
+    }
+
+    if (ct==0 && c==1) {
+      console.log("err");
+      toast.error("Wrong Input", {
+        className: classes.toast,
+      });
+    }
+        if (c==0 && ct==1) {
+          console.log("trr");
+          setPay(true);
+        }
   };
   const resett = () => {
     setPay(false);
